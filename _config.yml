@@ -1,5 +1,3 @@
-remote_theme: pages-themes/minimal@v0.2.0
+theme: jekyll-theme-minimal
 title: " "
 description: " "
-google_analytics: 
-show_downloads: false
