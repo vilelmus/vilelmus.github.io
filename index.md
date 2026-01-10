@@ -1,29 +1,14 @@
 ---
-layout: null
+layout: default
 ---
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Vilelmus</title>
-  <style>
-    body {
-      font-family: "Times New Roman", Times, serif;
-      font-size: 20px;
-      line-height: 1.6;
-      color: #111;
-      max-width: 750px;
-      margin: 60px auto;
-      padding: 0 20px;
-      background-color: #fff;
-    }
-    h1, h2 { font-weight: bold; margin-top: 40px; }
-    a { color: #0000EE; text-decoration: underline; }
-    /* Esconde qualquer coisa que o GitHub tente injetar */
-    header, footer, aside, .sidebar { display: none !important; }
-  </style>
-</head>
-<body>
+
+<style>
+  header, footer, aside, .sidebar-item, .sidebar { display: none !important; }
+  .container { max-width: 750px; margin: 0 auto; }
+  body { font-family: "Times New Roman", Times, serif; font-size: 20px; line-height: 1.6; color: #111; }
+  h1 { border-bottom: none; font-size: 32px; }
+  a { color: #0000EE; }
+</style>
 
 # About
 
@@ -31,12 +16,8 @@ layout: null
 
 # Stories
 
-* [Título do seu primeiro texto](#) — *Data*
+* [Minha primeira poesia](/vilelmus/2026/01/10/poesia-latina.html) — *Jan 2026*
 
 # Blog
 
-* [Primeira reflexão sobre latim](#)
-* [Notas sobre poesia portuguesa](#)
-
-</body>
-</html>
+* [Reflexões sobre o Latim](/vilelmus/2026/01/10/reflexao-latim.html)
