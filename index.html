@@ -1,28 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vilelmus</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/latin-modern-roman@4.5.0/index.min.css">
+    
     <style>
         body {
-            font-family: "Times New Roman", Times, serif; /* Fonte de livro antigo */
-            font-size: 21px;
-            line-height: 1.6;
-            color: #111;
+            /* Usando a fonte do LaTeX com fallback para Georgia ou Times */
+            font-family: "Latin Modern Roman", "Computer Modern Serif", Georgia, "Times New Roman", serif;
+            font-size: 18px; /* Tamanho levemente menor como você pediu */
+            line-height: 1.7;
+            color: #222;
             display: flex;
-            justify-content: center; /* Centraliza tudo */
+            justify-content: center;
             background-color: #fff;
             margin: 0;
-            padding: 60px 20px;
+            padding: 80px 25px;
         }
         .container {
-            max-width: 700px; /* Largura idêntica à do Michael Champagne */
+            max-width: 680px;
             width: 100%;
         }
-        h1 { font-size: 32px; margin-top: 40px; border-bottom: none; }
-        p { margin-bottom: 20px; }
-        a { color: #0000EE; text-decoration: underline; }
-        ul { list-style-type: disc; padding-left: 20px; }
+        h1 { 
+            font-size: 24px; /* Proporcionalmente menor */
+            margin-top: 45px; 
+            font-weight: bold;
+            color: #000;
+        }
+        p { margin-bottom: 22px; }
+        
+        a { 
+            color: #0044cc; 
+            text-decoration: none; 
+            border-bottom: 1px solid #ddd;
+        }
+        a:hover { 
+            border-bottom: 1px solid #0044cc; 
+        }
+
+        ul { list-style-type: none; padding: 0; }
         li { margin-bottom: 10px; }
         em { font-style: italic; }
     </style>
@@ -35,12 +53,13 @@
 
         <h1>Stories</h1>
         <ul>
-            <li><a href="link-do-seu-texto.html">Minha primeira poesia</a> — <em>Jan 2026</em></li>
+            <li><a href="#">St. Joseph of Leonessa, February 4th</a></li>
         </ul>
 
         <h1>Blog</h1>
         <ul>
-            <li><a href="link-da-reflexao.html">Reflexões sobre o Latim</a></li>
+            <li><a href="#">Latin by the Natural Method</a></li>
+            <li><a href="#">Reflexões sobre Camões</a></li>
         </ul>
 
     </div>
