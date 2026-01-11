@@ -4,52 +4,61 @@
     <meta charset="UTF-8">
     <title>Vilelmus</title>
     <style>
-        body { font-family: "Times New Roman", Times, serif; font-size: 20px; line-height: 1.6; color: #111; display: flex; justify-content: center; padding: 70px 25px; }
-        .container { max-width: 700px; width: 100%; }
-        h1 { font-size: 28px; font-weight: bold; margin-bottom: 5px; }
-        .author { font-size: 18px; margin-bottom: 5px; }
-        .date { font-size: 16px; font-style: italic; margin-bottom: 40px; }
-        p { margin-bottom: 22px; text-align: justify; }
-        a { color: #0000EE; text-decoration: none; }
-   <style>
-       body {
-            font-family: "Times New Roman", Times, serif;
-            font-size: 20px;
-            line-height: 1.6;
-            color: #111;
-            display: flex;
-            justify-content: center;
-            background-color: #fff;
-            margin: 0;
-            /* Padding fixo no topo garante que o container comece sempre no mesmo lugar */
-            padding: 100px 25px; 
-        }
-        .container {
-            max-width: 700px;
-            width: 100%;
-        }
-        h1 { 
-            font-size: 28px; 
-            /* Forçamos a margem superior a zero para alinhar com o topo do container */
-            margin-top: 0; 
-            margin-bottom: 30px;
-            font-weight: bold;
-            color: #000;
-            line-height: 1.2;
-        }
-        .container {
-            max-width: 700px;
-            width: 100%;
-        }
-        h1 { 
-            font-size: 28px; 
-            margin-top: 0; /* Começa exatamente no topo do container */
-            margin-bottom: 30px;
-            font-weight: bold;
-            color: #000;
-        }
-        /* ... resto do seu código ... */
-    </style>
+    body {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #111;
+        background-color: #fff;
+        margin: 0;
+        /* Padding idêntico para a altura ser a mesma */
+        padding: 90px 25px; 
+        
+        /* Centralização Absoluta */
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .container {
+        max-width: 700px;
+        width: 100%;
+        /* Garante que o container não tenha margens laterais automáticas estranhas */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1 { 
+        font-size: 28px; 
+        margin-top: 0; 
+        margin-bottom: 30px;
+        font-weight: bold;
+        color: #000;
+        text-align: left; /* Títulos sempre à esquerda dentro do container */
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    p { 
+        margin-bottom: 22px; 
+        text-align: justify; 
+    }
+
+    /* Ajuste para os links ficarem um embaixo do outro sem as bolinhas */
+    .links-section p {
+        margin-bottom: 10px;
+        text-align: left; /* Links não devem ser justificados para não criar espaços estranhos */
+    }
+
+    a { color: #0000EE; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+</style>
 </head>
 <body>
     <div class="container">
