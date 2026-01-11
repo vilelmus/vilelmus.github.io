@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vilelmus</title>
     <style>
-        body {
-            /* Voltando para a Times New Roman pura e clássica */
+        <style>
+       body {
             font-family: "Times New Roman", Times, serif;
-            font-size: 20px; /* Tamanho antigo que ficou bom */
+            font-size: 20px;
             line-height: 1.6;
             color: #111;
             display: flex;
             justify-content: center;
             background-color: #fff;
             margin: 0;
-            padding: 70px 25px;
+            /* Padding fixo no topo garante que o container comece sempre no mesmo lugar */
+            padding: 100px 25px; 
         }
         .container {
             max-width: 700px;
@@ -23,10 +24,12 @@
         }
         h1 { 
             font-size: 28px; 
-            margin-top: 40px; 
+            /* Forçamos a margem superior a zero para alinhar com o topo do container */
+            margin-top: 0; 
+            margin-bottom: 30px;
             font-weight: bold;
             color: #000;
-            border-bottom: none;
+            line-height: 1.2;
         }
         p { margin-bottom: 22px; }
         
