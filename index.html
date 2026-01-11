@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="la">
-<head>
-    <meta charset="UTF-8">
-    <title>Vilelmus</title>
-    <style>
+<style>
     body {
         font-family: "Times New Roman", Times, serif;
         font-size: 20px;
@@ -11,21 +6,19 @@
         color: #111;
         background-color: #fff;
         margin: 0;
-        /* Padding idêntico para a altura ser a mesma */
-        padding: 90px 25px; 
-        
-        /* Centralização Absoluta */
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
+        /* Padding fixo no topo garante a mesma altura em todas as páginas */
+        padding-top: 90px;
+        padding-bottom: 90px;
     }
 
     .container {
+        /* Largura fixa garante que a 'caixa' de texto seja idêntica em tudo */
         max-width: 700px;
-        width: 100%;
-        /* Garante que o container não tenha margens laterais automáticas estranhas */
-        margin-left: auto;
-        margin-right: auto;
+        /* O '0 auto' centraliza a caixa na tela perfeitamente */
+        margin: 0 auto;
+        /* Padding lateral para telas de celular não colarem na borda */
+        padding: 0 25px;
+        box-sizing: border-box;
     }
 
     h1 { 
@@ -34,7 +27,7 @@
         margin-bottom: 30px;
         font-weight: bold;
         color: #000;
-        text-align: left; /* Títulos sempre à esquerda dentro do container */
+        text-align: left;
     }
 
     h2 {
@@ -42,7 +35,6 @@
         margin-top: 40px;
         margin-bottom: 20px;
         font-weight: bold;
-        text-align: left;
     }
 
     p { 
@@ -50,25 +42,24 @@
         text-align: justify; 
     }
 
-    /* Ajuste para os links ficarem um embaixo do outro sem as bolinhas */
     .links-section p {
         margin-bottom: 10px;
-        text-align: left; /* Links não devem ser justificados para não criar espaços estranhos */
+        text-align: left;
     }
 
     a { color: #0000EE; text-decoration: none; }
     a:hover { text-decoration: underline; }
 </style>
-</head>
+
 <body>
     <div class="container">
         <h1>De me</h1>
         <p>Amator artis rhetoricae spiritu, corde latinitatis, scientiae botanicae negotio, litterarum lusitanicarum prudentia. Nugas meas ad hunc situm mittere soleo. Haud quidquid autem de me est dicendum: imperitus in latine legendo, rusticus in eloquenter orando, improbus in otio fruendo, nefarius in Deo pie parendo.</p>
 
-        <h1>Latine</h1>
+        <h2>Latine</h2>
         <div class="links-section">
-            <p><a href="inesdecastro.html">Historia Calamitatum Petri I et Agnetis de Castro</p>
-            <p><a href="epistula-nathanum.html">Epistula prima ad Nathanum</p>
+            <p><a href="inesdecastro.html">Historia Calamitatum Petri I et Agnetis de Castro</a> — <em>Ian. MMXXVI</em></p>
+            <p><a href="epistula-nathanum.html">Epistula prima ad Nathanum</a> — <em>Ian. MMXXVI</em></p>
         </div>
+    </div>
 </body>
-</html>
