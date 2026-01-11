@@ -1,24 +1,23 @@
 <style>
-    body {
+ body {
         font-family: "Times New Roman", Times, serif;
         font-size: 20px;
         line-height: 1.6;
         color: #111;
         background-color: #fff;
         margin: 0;
-        /* Padding fixo no topo garante a mesma altura em todas as páginas */
-        padding-top: 90px;
-        padding-bottom: 90px;
+        /* Trava a altura do topo em 100px para todas */
+        padding-top: 100px; 
+        /* Centralização absoluta e estável */
+        display: flex;
+        justify-content: center;
     }
 
     .container {
-        /* Largura fixa garante que a 'caixa' de texto seja idêntica em tudo */
-        max-width: 700px;
-        /* O '0 auto' centraliza a caixa na tela perfeitamente */
-        margin: 0 auto;
-        /* Padding lateral para telas de celular não colarem na borda */
-        padding: 0 25px;
-        box-sizing: border-box;
+        /* A largura precisa ser EXATAMENTE a mesma em todas */
+        width: 700px; 
+        /* Remove paddings laterais que podem causar desalinhamento */
+        padding: 0; 
     }
 
     h1 { 
@@ -27,28 +26,7 @@
         margin-bottom: 30px;
         font-weight: bold;
         color: #000;
-        text-align: left;
-    }
-
-    h2 {
-        font-size: 24px;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        font-weight: bold;
-    }
-
-    p { 
-        margin-bottom: 22px; 
-        text-align: justify; 
-    }
-
-    .links-section p {
-        margin-bottom: 10px;
-        text-align: left;
-    }
-
-    a { color: #0000EE; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    }}
 </style>
 
 <body>
