@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epistula prima ad Nathanum</title>
-    <style>
+   <style>
         body {
             font-family: "Times New Roman", Times, serif;
             font-size: 20px;
@@ -21,6 +21,16 @@
             max-width: 700px;
             width: 100%;
         }
+        /* Este é o segredo: forçar o tamanho para 20px como o resto do texto */
+        .back-link { 
+            display: block;
+            margin-bottom: 40px;
+            color: #0000EE; 
+            text-decoration: none;
+            font-size: 20px; /* Ajustado para igualar ao texto */
+        }
+        .back-link:hover { text-decoration: underline; }
+
         h1 { 
             font-size: 28px; 
             margin-top: 20px; 
@@ -31,19 +41,11 @@
             margin-bottom: 22px; 
             text-align: justify;
         }
-        a.back-link { 
-            display: block;
-            margin-bottom: 40px;
-            color: #0000EE; 
-            text-decoration: none;
-            font-size: 16px;
-        }
-        a.back-link:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="index.html" class="back-link">← Regredi ad paginam primam</a>
+        <a href="index.html" class="back-link">← Regredi ad paginam primam</a></a>
         
         <h1>Epistula prima ad Nathanum</h1>
 
